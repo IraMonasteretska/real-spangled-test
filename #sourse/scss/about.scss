@@ -1,0 +1,537 @@
+.about-welcomesect {
+    position: relative;
+
+    &>img {
+        width: 100%;
+        height: 100%;
+
+        position: absolute;
+        object-fit: cover;
+        top: 0;
+        left: 0;
+    }
+}
+
+.about-welcomesect__content {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 50%;
+    // transform: translateY(-50%);
+    margin-top: -60px;
+
+    p {
+        margin-bottom: 12px;
+        font-family: 'Urbanist', sans-serif;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 120%;
+        letter-spacing: 0.01em;
+        color: #ECD92B;
+        text-align: center;
+    }
+
+    h1 {
+        margin: 0;
+        font-family: 'Urbanist', sans-serif;
+        font-weight: 600;
+        font-size: 80px;
+        line-height: 120%;
+        text-align: center;
+        letter-spacing: 0.01em;
+        color: #fff;
+    }
+}
+
+.aboutsect {
+    padding: 120px 0 0 0;
+    background: #0D1112;
+}
+
+.splcontainer {
+    position: relative;
+
+    &::after {
+        content: '';
+        display: inline-block;
+        width: 1px;
+        height: calc(100% + 120px);
+        background: rgba(255, 255, 255, 0.1);
+        position: absolute;
+        left: -50px;
+        top: -120px;
+    }
+}
+
+.aboutsect__row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.aboutsect__img {
+    width: 100%;
+    max-width: 450px;
+    flex: 0 0 450px;
+
+    img {
+        width: 100%;
+    }
+}
+
+.splcontainer {
+    background: #fff;
+}
+
+.aboutsect__descr {
+    width: 100%;
+    max-width: calc(100% - 450px);
+    flex: 0 0 calc(100% - 450px);
+
+    .titlesect {
+        padding: 30px 0 30px 80px;
+        background: #0D1112;
+
+        p {
+            font-family: 'Urbanist', sans-serif;
+            margin-bottom: 15px;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 120%;
+            letter-spacing: 0.01em;
+            color: #E7AD3E;
+        }
+
+        h2 {
+            font-family: 'Urbanist', sans-serif;
+            margin: 0;
+            color: #fff;
+            letter-spacing: 0.01em;
+            font-weight: 600;
+            font-size: 55px;
+            line-height: 120%;
+        }
+
+    }
+
+    .descrsect {
+        padding: 50px 50px 0 80px;
+        max-width: 770px;
+        color: #222222;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 150%;
+        font-family: 'Inter', sans-serif;
+
+        p {
+            margin-bottom: 10px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+.aboutsect__row {
+    margin-bottom: 120px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.aboutsect__row:nth-child(2) .aboutsect__descr .titlesect {
+    background: #F8F8F8;
+
+    h2 {
+        color: #222;
+    }
+}
+
+.letstalk {
+    .imgwrap {
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.letstalk__descr {
+    h3 {
+        font-family: 'Urbanist', sans-serif;
+        font-weight: 600;
+        font-size: 55px;
+        line-height: 120%;
+        letter-spacing: 0.01em;
+        color: #222222;
+        margin: 0 0 50px 0;
+    }
+
+    a {
+        padding: 14px 50px;
+        display: inline-block;
+        background: #ECD92B;
+        color: #222222;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 150%;
+        font-family: 'Urbanist', sans-serif;
+    }
+}
+
+.letstalk .container {
+    max-width: 100%;
+    padding: 0;
+}
+
+.about-welcomesect {
+    width: 100vw;
+    height: 100vh;
+    padding-top: 45vh;
+    box-sizing: border-box;
+    // background-image: url('../img/mainpic.jpg');
+    // background-size: cover;
+    // background-position: center;
+    margin: 0;
+    width: 100%;
+    min-height: 450px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:1590.8px) {
+    .about-welcomesect__content h1 {
+        font-size: 65px;
+    }
+
+    .about-welcomesect__content p,
+    .aboutsect__descr .titlesect p {
+        font-size: 22px;
+    }
+
+    .aboutsect__descr .titlesect h2 {
+        font-size: 45px;
+    }
+
+    .letstalk__descr h3 {
+        font-size: 50px;
+    }
+
+}
+
+@media(max-width:1399.8px) {
+
+    .about-welcomesect__content h1 {
+        font-size: 60px;
+    }
+
+    .aboutsect {
+        padding-top: 100px;
+    }
+
+    .aboutsect__descr .titlesect {
+        padding: 20px 0 20px 50px;
+    }
+
+    .aboutsect__descr .titlesect p {
+        margin-bottom: 10px;
+    }
+
+    .aboutsect__descr .descrsect {
+        padding: 30px 50px 0 50px;
+    }
+
+    .aboutsect__img {
+        max-width: 350px;
+        flex: 0 0 350px;
+    }
+
+    .aboutsect__descr {
+        max-width: calc(100% - 350px);
+        flex: 0 0 calc(100% - 350px);
+    }
+
+    .letstalk__descr {
+        padding-right: 30px;
+    }
+
+    .letstalk__descr h3 {
+        margin-bottom: 30px;
+    }
+
+    .splcontainer:after {
+        height: calc(100% + 100px);
+        top: -100px;
+    }
+
+
+
+
+
+
+
+
+
+    .aboutsect__descr .descrsect {
+        font-size: 16px;
+    }
+
+    .about-welcomesect__content p,
+    .aboutsect__descr .titlesect p {
+        font-size: 21px;
+    }
+
+    .aboutsect__descr .titlesect h2,
+    .letstalk__descr h3 {
+        font-size: 45px;
+    }
+
+}
+
+@media(max-width:1199.8px) {
+
+    .about-welcomesect__content p,
+    .aboutsect__descr .titlesect p {
+        font-size: 18px;
+    }
+
+    .about-welcomesect__content h1 {
+        font-size: 50px;
+    }
+
+    .aboutsect {
+        padding-top: 80px;
+    }
+
+    .splcontainer:after {
+        height: calc(100% + 80px);
+        top: -80px;
+    }
+
+    .aboutsect__row {
+        margin-bottom: 70px;
+    }
+
+    .about-welcomesect__content {
+        margin-top: -30px;
+    }
+
+
+
+
+
+
+    .aboutsect__descr .titlesect h2,
+    .letstalk__descr h3 {
+        font-size: 38px;
+    }
+
+}
+
+@media(max-width:991.8px) {
+    .about-welcomesect {
+        height: 450px;
+
+        &>img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .splcontainer:after {
+        display: none;
+    }
+
+    .aboutsect__img {
+        max-width: 250px;
+        flex: 0 0 250px;
+
+        img {
+            display: block;
+        }
+    }
+
+    .aboutsect__descr {
+        max-width: calc(100% - 250px);
+        flex: 0 0 calc(100% - 250px);
+    }
+
+    .aboutsect__img img {
+        position: sticky;
+        top: 120px;
+    }
+
+    .aboutsect__descr .titlesect {
+        padding: 10px 0 10px 30px;
+    }
+
+    .aboutsect__descr .descrsect {
+        padding: 20px 30px 40px 30px;
+    }
+
+
+
+
+
+
+
+    .about-welcomesect__content p,
+    .aboutsect__descr .titlesect p {
+        font-size: 16px;
+    }
+
+    .aboutsect__descr .titlesect h2 {
+        font-size: 36px;
+    }
+
+    .letstalk__descr h3 {
+        font-size: 26px;
+    }
+
+}
+
+@media(max-width:767.8px) {
+
+    .aboutsect__img,
+    .aboutsect__descr {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .aboutsect__img img {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .aboutsect__descr .titlesect {
+        background: #F8F8F8;
+        text-align: center;
+    }
+
+    .aboutsect__descr .titlesect h2 {
+        color: #222;
+    }
+
+    .aboutsect__descr .titlesect p {
+        margin-bottom: 5px;
+    }
+
+    .aboutsect__descr .titlesect {
+        padding: 20px 30px;
+    }
+
+    .aboutsect {
+        padding-top: 60px;
+    }
+
+    .aboutsect__descr .descrsect {
+        padding-bottom: 30px;
+    }
+
+    .letstalk__descr {
+        padding: 50px !important;
+    }
+
+    .aboutsect__row {
+        margin-bottom: 40px;
+    }
+
+    .letstalk .container {
+        max-width: 540px;
+        padding-right: var(--bs-gutter-x, .75rem);
+        padding-left: var(--bs-gutter-x, .75rem);
+    }
+
+    .letstalk {
+        background: #0D1112;
+        padding-top: 5px;
+
+        .row {
+            background: #fff;
+        }
+    }
+
+
+
+
+
+
+    .aboutsect__descr .titlesect h2 {
+        font-size: 32px;
+    }
+}
+
+@media(max-width:575.8px) {
+
+    .aboutsect__container1,
+    .letstalk .container {
+        width: 100% !important;
+        max-width: 100% !important;
+        padding-right: var(--bs-gutter-x, .75rem) !important;
+        padding-left: var(--bs-gutter-x, .75rem) !important;
+    }
+
+    .aboutsect {
+        padding-top: 40px;
+    }
+
+    .aboutsect__descr .descrsect {
+        padding: 20px 20px 30px 20px;
+    }
+
+    .aboutsect__row {
+        margin-bottom: 20px;
+    }
+
+    .letstalk__descr {
+        padding: 20px !important;
+    }
+
+    .letstalk__descr h3 {
+        font-size: 22px;
+    }
+
+    .letstalk__descr a {
+        padding: 10px 40px;
+    }
+
+    .about-welcomesect__content {
+        margin-top: 0;
+    }
+
+    .about-welcomesect {
+        padding-top: 25vh;
+    }
+
+
+    .aboutsect__descr .titlesect h2 {
+        font-size: 28px;
+    }
+
+    .about-welcomesect__content h1 {
+        font-size: 32px;
+    }
+
+    .letstalk.dbgmob {
+        .letstalk__descr {
+            padding-left: 15px !important;
+            padding-right: 15px !important;
+        }
+    }
+
+}
