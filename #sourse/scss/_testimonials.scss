@@ -287,7 +287,13 @@
 
 }
 
-
+.modalfeedback .btn-close {
+    outline: none;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    box-shadow: none;
+}
 
 
 
@@ -571,7 +577,7 @@
     }
 
     .modalfeedback .modal-dialog .modal-content {
-        padding: 30px 20px;
+        padding: 40px 20px 30px 20px;
     }
 
     .modalfeedback .title {
@@ -592,6 +598,10 @@
         height: 46px;
     }
 
+    .modalfeedback .btn-close {
+        right: 10px;
+        top: 10px;
+    }
 
 }
 
